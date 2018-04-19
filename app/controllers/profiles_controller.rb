@@ -46,6 +46,10 @@ class ProfilesController < ApplicationController
 
     end
 
+    def show_all
+        @profile = Profile.all
+    end
+
     private
     # A 'Dry' way to set the profile as a method to be called above --> "Profile.find(set_profile)" instead of "Profile.find(user: current_user)"
     # 

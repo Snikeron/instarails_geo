@@ -9,7 +9,7 @@
 <%= @current_user.profile.full_address %>
 
 <p>
-    <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@current_user.profile.latitude},#{@current_user.profile.longitude}&markers=#{@current_user.profile.latitude},#{@current_user.profile.longitude}&zoom=11&size=640x400&key=AIzaSyD964KFUMyHkWZVdc4RkUsVy_3jLWjJCbU", class: 'img-fluid img-rounded', alt: "#{@current_user.profile.full_address} on the map", size: "500" %>
+    <%= google_map_image @current_user.profile %>
 </p>
 
 <p>
