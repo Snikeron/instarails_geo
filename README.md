@@ -1,24 +1,5 @@
-# README
+# InstaRails (with Geocoder)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Added 'show_all' action to profiles controller, which calls Profile object
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Added 'show_all_google_map' method in application helper which loops through profile lat-longs and concatenates each of them into static google map markers.
